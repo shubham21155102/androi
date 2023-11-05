@@ -23,6 +23,7 @@ public class HomePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
         TextView textView = findViewById(R.id.data);
+        
         RequestQueue queue = Volley.newRequestQueue(this);
         String url = "https://my-json-server.typicode.com/shubham21155102/demo/datas";
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
